@@ -25,6 +25,9 @@
     </table>
 
     <script>
+        fetch('https://wilsenw.github.io/scoreboard/')
+            .then(response => response.json());
+
         var myArray = [
             { 'uid': '1', 'date': '11/10/2021', 'score': '90' },
             { 'uid': '2', 'date': '03/06/2022', 'score': '75' },
