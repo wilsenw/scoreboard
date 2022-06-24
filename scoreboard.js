@@ -5,16 +5,27 @@ function httpGet(theUrl) {
     return xmlHttpReq.responseText;
 }
 
-var myArray = httpGet('https://3981233a-b1f4-484b-88f9-518163fd75e9.mock.pstmn.io');
+url = 'https://0257bdb5-433b-4985-8cc1-63693a3df42e.mock.pstmn.io'
+var text = httpGet(url)
+text = text.slice(1, -1).trim();
+var array = text.split(",");
 
-// var myArray = [
-//     { 'uid': '1', 'date': '11/10/2021', 'score': '90' },
-//     { 'uid': '2', 'date': '03/06/2022', 'score': '75' },
-//     { 'uid': '3', 'date': '29/05/2022', 'score': '46' },
-//     { 'uid': '4', 'date': '18/05/2022', 'score': '59' },
-// ]
+for (var i = 0; i < array.length; i++) {
+    array[i] = array[i].replace(/(['"])/g, '');
+}
 
-buildTable(myArray)
+var result = []
+var dict = {}
+for (var i = 0; i < array.length; i += 3) {
+    dict = {
+        uid: array[i],
+        date: array[i + 1],
+        score: array[i + 2]
+    }
+    result.push(dict);
+}
+
+buildTable(result)
 
 function buildTable(data) {
     var table = document.getElementById('myTable')
