@@ -1,0 +1,30 @@
+a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: aqua;
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 30%;
+}
+
+a:hover {
+    color: rgb(23, 0, 113);
+    font-weight: bold;
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 30%;
+    background-color: aqua;
+}
+
+.home {
+    background-position: left top;
+    background-image: url(leaderboard-bg.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    color: aqua;
+}

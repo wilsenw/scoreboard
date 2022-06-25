@@ -1,0 +1,50 @@
+.highlight {
+    color: rgb(145, 255, 0);
+}
+
+body {
+    background-color: rgb(217, 220, 255);
+}
+
+.home {
+    background-position: left top;
+    background-image: url(info-bg.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    color: rgb(4, 0, 119);
+    font-size: 55px;
+}
+
+h3 {
+    color: rgb(0, 98, 98);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p {
+    color: rgb(19, 0, 77);
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: aqua;
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 30%;
+}
+
+a:hover {
+    color: rgb(23, 0, 113);
+    font-weight: bold;
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 30%;
+    background-color: aqua;
+}
