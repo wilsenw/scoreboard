@@ -19,7 +19,7 @@ a:hover {
 
 .home {
     background-position: left top;
-    background-image: url(leaderboard-bg.jpg);
+    background-image: url(../images/leaderboard-bg.jpg);
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
