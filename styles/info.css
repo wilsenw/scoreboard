@@ -9,6 +9,7 @@ body {
 .home {
     background-position: left top;
     background-image: url(../images/info-bg.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
@@ -16,23 +17,23 @@ body {
 
 h1 {
     color: rgb(4, 0, 119);
-    font-size: 55px;
+    font-size: 45px;
 }
 
 h3 {
     color: rgb(0, 98, 98);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 p {
     color: rgb(19, 0, 77);
-    font-size: 18px;
+    font-size: 12px;
 }
 
 a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     color: aqua;
     padding: 8px;
@@ -47,4 +48,23 @@ a:hover {
     border: 2px solid white;
     border-radius: 30%;
     background-color: aqua;
+}
+
+.card {
+    opacity: 0.85;
+    width: 80%;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    p {
+        font-size: 18px;
+    }
+    .card {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 55px;
+    }
 }
