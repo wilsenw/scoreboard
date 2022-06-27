@@ -29,3 +29,8 @@ a:hover {
 h1 {
     color: aqua;
 }
+
+tbody {
+    max-height: 70vh;
+    overflow: scroll;
+}
