@@ -1,8 +1,4 @@
-.highlight {
-    color: rgb(145, 255, 0);
-}
-
-.info {
+.home {
     background-position: left top;
     background-image: url(../images/home-bg.jpg);
     background-size: cover;
@@ -12,8 +8,8 @@
 }
 
 h1 {
-    color: aqua;
-    font-size: 70px;
+    color: rgb(205, 205, 32);
+    font-size: 50px;
 }
 
 .btn {
@@ -24,5 +20,10 @@ h1 {
     /* For desktop: */
     .btn {
         width: 25%;
+    }
+
+    h1 {
+        color: rgb(205, 205, 32);
+        font-size: 70px;
     }
 }

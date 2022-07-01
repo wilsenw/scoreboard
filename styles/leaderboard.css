@@ -2,19 +2,19 @@ a {
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    color: aqua;
+    color: rgb(187, 0, 255);
     padding: 8px;
-    border: 2px solid white;
+    border: 2px solid rgba(215, 13, 218, 0.495);
     border-radius: 30%;
 }
 
 a:hover {
-    color: rgb(23, 0, 113);
+    color: rgb(179, 255, 0);
     font-weight: bold;
     padding: 8px;
-    border: 2px solid white;
+    border: 2px solid rgba(215, 13, 218, 0.495);
     border-radius: 30%;
-    background-color: aqua;
+    background-color: rgba(215, 13, 218, 0.495);
 }
 
 .home {
@@ -27,10 +27,14 @@ a:hover {
 }
 
 h1 {
-    color: aqua;
+    color: rgb(205, 205, 32);
 }
 
 tbody {
     max-height: 70vh;
     overflow: scroll;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
 }
