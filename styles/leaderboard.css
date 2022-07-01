@@ -30,10 +30,16 @@ h1 {
     color: rgb(205, 205, 32);
 }
 
+th{
+    color: rgb(248, 161, 228);
+}
+
 tbody {
+    color: rgb(255, 248, 176);
     max-height: 70vh;
     overflow: scroll;
 }
+
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
