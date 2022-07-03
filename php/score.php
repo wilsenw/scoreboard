@@ -15,19 +15,22 @@ if ($conn->connect_error) {
 } 
 
 $sql = "SELECT uid, date, score FROM score ORDER BY score DESC";
- 
+
 if ($result = $conn->query($sql)) {
+    $count = 1;
     while ($row = $result->fetch_assoc()) {
         $row_id = $row["uid"];
         $row_date = $row["date"];
         $row_score = $row["score"];
 
         echo '<tr> 
-                <th scope="row">1</th>
+                <th scope="row">' . $count . '</th>
                 <td>' . $row_id . '</td> 
                 <td>' . $row_date . '</td> 
                 <td>' . $row_score . '</td> 
               </tr>';
+        
+        $count += 1;
     }
     $result->free();
 }
