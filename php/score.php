@@ -14,7 +14,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT uid, date, score FROM score ORDER BY score DESC";
+$sql = "SELECT uid, CONVERT_TZ(date, '+00:00','+7:00') as date, score FROM score ORDER BY score DESC";
 
 if ($result = $conn->query($sql)) {
     $count = 1;
